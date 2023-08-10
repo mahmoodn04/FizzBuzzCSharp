@@ -116,5 +116,38 @@ namespace FizzBuzz.Tests
             //THEN
             Assert.Equal(gives, "Buzz");
         }
+        [Fact]
+        public void Gives12GivenFizz()
+        {
+            //GIVEN
+            int given = 12;
+            FizzBuzz one = new FizzBuzz();
+            //when
+            string gives = one.given(given);
+            //THEN
+            Assert.Equal(gives, "Fizz");
+        }
+         [Fact]
+        public void Gives15GivenFizzBuzz()
+        {
+            //GIVEN
+            int given = 15;
+            FizzBuzz one = new FizzBuzz();
+            //when
+            string gives = one.given(given);
+            //THEN
+            Assert.Equal(gives, "FizzBuzz");
+        }
+         [Fact]
+        public void Gives30GivenFizzBuzz()
+        {
+            //GIVEN
+            int given = 30;
+            FizzBuzz one = new FizzBuzz();
+            //when
+            string gives = one.given(given);
+            //THEN
+            Assert.Equal(gives, "FizzBuzz");
+        }
     }
 }
